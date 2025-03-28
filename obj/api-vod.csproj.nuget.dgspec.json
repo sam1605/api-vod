@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Projects\\api-vod\\api-vod\\api-vod.csproj": {}
+    "G:\\Projects\\api-vod\\api-vod.csproj": {}
   },
   "projects": {
-    "G:\\Projects\\api-vod\\api-vod\\api-vod.csproj": {
+    "G:\\Projects\\api-vod\\api-vod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Projects\\api-vod\\api-vod\\api-vod.csproj",
+        "projectUniqueName": "G:\\Projects\\api-vod\\api-vod.csproj",
         "projectName": "api-vod",
-        "projectPath": "G:\\Projects\\api-vod\\api-vod\\api-vod.csproj",
+        "projectPath": "G:\\Projects\\api-vod\\api-vod.csproj",
         "packagesPath": "C:\\Users\\samad\\.nuget\\packages\\",
-        "outputPath": "G:\\Projects\\api-vod\\api-vod\\obj\\",
+        "outputPath": "G:\\Projects\\api-vod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
