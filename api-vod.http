@@ -1,0 +1,6 @@
+@api_vod_HostAddress = http://localhost:5251
+
+GET {{api_vod_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
