@@ -15,6 +15,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<SupabaseConfig>(builder.Configuration.GetSection("Supabase"));
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://*:{port}");
+
 
 var app = builder.Build();
 
