@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-vod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e8c4e2560c0f0b0c158308c7361ace3b6870f8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd8b3c509b06dc8cae1b33a7e6dfe9f336a9b08b")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-vod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-vod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

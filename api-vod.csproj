@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>api_vod</RootNamespace>
+    <UserSecretsId> </UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

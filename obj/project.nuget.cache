@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mbaibXzms/A=",
+  "dgSpecHash": "64HIKGOGE2E=",
   "success": true,
-  "projectFilePath": "G:\\Projects\\api-vod\\api-vod\\api-vod.csproj",
+  "projectFilePath": "G:\\Projects\\api-vod\\api-vod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samad\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\samad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
