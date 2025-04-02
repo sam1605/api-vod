@@ -6,3 +6,25 @@
 /.vs/ProjectEvaluation
 /obj/Debug/net8.0/api-vod.AssemblyInfo.cs
 /obj/Debug/net8.0/api-vod.AssemblyInfoInputs.cache
+/obj/Debug/net8.0/api-vod.AssemblyInfo.cs
+/.gitignore
+/.gitignore
+/obj/Debug/net8.0/api-vod.AssemblyInfo.cs
+# Ignore Visual Studio & build folders
+.vs/
+bin/
+obj/
+
+# Ignore user-specific settings
+*.user
+*.suo
+
+# Ignore build outputs
+*.dll
+*.exe
+*.pdb
+*.log
+
+# Ignore local environment files
+appsettings.Local.json
+secrets.json

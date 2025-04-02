@@ -3,23 +3,32 @@ using api_vod.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// ✅ Explicitly load appsettings.json
+// ✅ Load appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// ✅ Enable CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy => policy
+            .AllowAnyOrigin()  // Allows requests from any frontend
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
+// ✅ Swagger Setup
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// ✅ Supabase Configuration
 builder.Services.Configure<SupabaseConfig>(builder.Configuration.GetSection("Supabase"));
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://*:{port}");
-
-
 var app = builder.Build();
+
+// ✅ Apply CORS Policy BEFORE Controllers
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -29,9 +38,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
