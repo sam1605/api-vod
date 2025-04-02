@@ -1,1 +1,1 @@
-web: dotnet VodApi.dll
+web: dotnet ApiVod.dll
