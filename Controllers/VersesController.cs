@@ -34,15 +34,14 @@ public class VersesController : ControllerBase
     {
         try
         {
-            var response = await _client.GetFromJsonAsync<List<VwVerse>>($"/rest/v1/vw_verses?select=json");
+            var response = await _client.GetFromJsonAsync<List<VwVerse>>("/rest/v1/vw_random_verse?select=json");
 
             if (response == null || response.Count == 0)
             {
                 return NotFound("No verses found.");
             }
 
-            var randomVerse = response[new Random().Next(response.Count)];
-            return Ok(randomVerse.Json);
+            return Ok(response[0].Json);
         }
         catch (Exception ex)
         {
