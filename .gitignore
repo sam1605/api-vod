@@ -28,3 +28,6 @@ obj/
 # Ignore local environment files
 appsettings.Local.json
 secrets.json
+/.idea/.idea.api-vod/.idea/.gitignore
+/.idea/.idea.api-vod/.idea/indexLayout.xml
+/.idea/.idea.api-vod/.idea/vcs.xml
